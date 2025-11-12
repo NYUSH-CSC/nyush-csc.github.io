@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box; /*makes sizing exactly what you set its width to be*/
+}
 body {
     background-color: white;
     height: 2000px;
@@ -30,26 +33,24 @@ h2 {
 }
 
 .content { /*style of dropdown content*/
-    padding: 0 18px;
+    padding: 0 18px;  
     background-color: violet;
     max-height: 0;
     overflow: hidden; /*overflow is hidden so you cant see it when the max height is 0*/
     transition: max-height 0.2s ease-out; /* max height is animated*/
-    width: 70.4%;
-
+    width: inherit; /* Inherit the width of the parent */
 }
 
 .dropdown {
+    padding: 18px 18px;
     background-color: #eee;
     color: #444;
     cursor: pointer;
-    padding: 18px;
-    width: 80%;
     border: none;
     text-align: left;
     outline: none;
     font-size: 15px;
-    margin: 0 auto;
+    width: inherit; /* Dropdown width matches the parent container */
   }
 
 .active, .dropdown:hover { /*makes it so that the colour of the bar chnages when hovered*/
@@ -70,4 +71,8 @@ body {
     font-style: normal;
 }   
 
+.collapse-area {
+    width: 80%;
+
+}
   

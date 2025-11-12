@@ -1,0 +1,73 @@
+body {
+    background-color: white;
+    height: 2000px;
+    overflow: auto; /* automatically makes the page scrollable*/
+    margin: 0px; /*delete ugly margin*/
+}
+
+.bg {  /*background image specs*/
+
+    background-image: url(computerbg.jpeg); /*image used*/
+
+    height: 500px;
+
+    /*centre and scale the image*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h1 {
+    text-align: left;
+}
+
+h2 {
+
+    text-align: left;
+    color: black;
+
+}
+
+.content { /*style of dropdown content*/
+    padding: 0 18px;
+    background-color: violet;
+    max-height: 0;
+    overflow: hidden; /*overflow is hidden so you cant see it when the max height is 0*/
+    transition: max-height 0.2s ease-out; /* max height is animated*/
+    width: 70.4%;
+
+}
+
+.dropdown {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin: 0 auto;
+  }
+
+.active, .dropdown:hover { /*makes it so that the colour of the bar chnages when hovered*/
+    background-color: beige;
+}
+p {
+    text-align: left;
+}
+
+body {
+    font-family: "Source Code Pro", sans-serif; /* Use the custom font */
+}
+
+@font-face {
+    font-family: "Source Code Pro"; /* Name of the font */
+    src: url(SourceCodePro-VariableFont_wght.ttf) format('truetype'); /* Path to the .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}   
+
+  

@@ -1,7 +1,33 @@
 <!DOCTYPE html>
+<html>
 <head>
-  
+    <title>Member Portal Login</title>
 </head>
 <body>
-    <h1>Ashley</h1>
+    <h2>Member Portal Login</h2>
+
+    <input id="username" placeholder="Username"><br><br>
+    <input id="password" type="password" placeholder="Password"><br><br>
+
+    <button onclick="login()">Login</button>
+
+    <p id="msg"></p>
+
+    <script>
+        const USER = "anudari";
+        const PASS = "wh";    
+
+        function login() {
+            const u = document.getElementById("username").value;
+            const p = document.getElementById("password").value;
+
+            if (u === USER && p === PASS) {
+                document.getElementById("msg").innerHTML =
+                    "congrats!<br><a href='portal.html'>Go to Portal</a>";
+            } else {
+                document.getElementById("msg").innerText = "u noob";
+            }
+        }
+    </script>
 </body>
+</html>

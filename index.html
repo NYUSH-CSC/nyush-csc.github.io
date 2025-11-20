@@ -1,7 +1,82 @@
 <!DOCTYPE html>
 <head>
-  
+  <title>About Team</title>
+  <meta charset="UTF-8">
+  <style>
+    body {  
+      font-family: Arial, sans-serif;
+      margin: 20px; 
+      background-color: #f4f4f4; 
+      color: #333;
+      padding: 20px; 
+      line-height: 1.6;}
+
+    h1,h2 {
+      text-align: center;
+    }
+    .member {
+      background: #fff;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .searchsection, .contactsection, .addsection {
+      margin-top: 20px;
+      padding: 15px;
+      background: #e2e2e2;
+      border-radius: 5px;
+    }
+    input[type="text"], textarea, button {
+      display: block;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      width: 100%;
+    }
+  </style>
 </head>
+
 <body>
-  
+  <h1>About Team</h1>
+  <h2>Our Team Members</h2>
+  <div id="teamlist">
+    <div class="member">A - Project Manager</div>
+    <div class="member">B - Lead Developer</div>
+    <div class="member">C - Designer</div>
+    <div class="member">D - Engineer</div>
+    <div class="member">E - Specialist</div>
+  </div>
+    
+  <div class="searchsection">   
+    <h3>search for a Team Member</h3>
+        <form id="Search Form">
+          <input type="text" placeholder="Name" id="searchName"/>
+          <button type="submit">Search</button>
+        </form>
+    <div id="searchResult"></div>
+  </div>
+   
+  <div class="contactsection" id="contactsection" style="display:none"> <!--hidden by default-->
+    <h3>Contact Team Member</h3>
+    <form id="Contact Form">
+      <input type="text" placeholder="Subject" id="contactsubject"/>
+      <textarea placeholder="Message" id="contactmessage"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <div class="addsection" id="AddNewMember" style="display:none"> <!--hidden by default-->
+    <h3>Add New Team Member</h3>
+    <form id="Add Member Form">
+      <p id="Name"></p>
+      <input type="text" placeholder="Role" id="newmemberrole"/>
+      <input type="text" placeholder="Email @sendaemail.com" id="newmemberemail"/>
+      <button type="submit">OK to Add</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+

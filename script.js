@@ -17,7 +17,7 @@ document.getElementById("Search Form").addEventListener("submit", function(event
         contact.style.display = "block";
     }
     else {
-        result.innerHTML = "No Team Member Found. Would you like to add "+name+" to the Team?";
+        result.innerHTML = "No Team Member Found. \nWould you like to add "+name+" to the Team?";
         const newname = document.getElementById("Name");
         newname.innerHTML="Name: "+name;
         addNewMember.style.display = "block";
